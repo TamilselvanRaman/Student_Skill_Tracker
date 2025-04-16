@@ -3,7 +3,7 @@ const router = require("express").Router();
 const asyncHandler = require("express-async-handler");
 const Student = require("../Model/StudentModel");
 const Dashboard = require("../Model/Studentdashboard");
-const bcrypt = require("bcrypt");
+const bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const validateToken = require("../middelware/authMiddleware");

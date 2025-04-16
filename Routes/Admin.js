@@ -2,7 +2,7 @@ const express = require("express");
 const router = require("express").Router();
 const asyncHandler = require("express-async-handler");
 const Admin = require("../Model/AdminModel");
-const bcrypt = require("bcrypt");
+const bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const Dashboard = require("../Model/Studentdashboard");
